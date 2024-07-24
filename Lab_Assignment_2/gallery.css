@@ -1,0 +1,62 @@
+
+body
+{
+    background-color: rgba(213, 208, 208, 0.825);
+    margin: 0px;
+}
+h6
+{
+    font-size: xx-large;
+    padding: 15px;
+    margin: 0px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.flex-container
+{
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin:auto; */
+}
+.flex-item
+{
+    cursor: pointer;
+    height: fit-content;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 20px;
+    margin: 15px ;
+    gap: 15px;
+    text-align: center;
+    /* background-color: white; */
+}
+
+.flex-item:hover
+{
+    transform: translateY(-20px);
+    transform: scale(1.05);
+    transition: 0.5s ease-in;
+}
+img
+{
+    border-radius: 20px;
+    height: 250px;
+    width: 80%;
+    margin: 15px;
+}
+figcaption
+{
+    color: azure;
+}
+p
+{
+    color: aliceblue;
+    /* margin:15px; */
+    width: 80%;
+    margin:15px auto;
+}

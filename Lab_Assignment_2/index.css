@@ -1,0 +1,244 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    display :flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.859);
+    padding: 10px;
+    margin:auto;
+}
+header div
+{
+    margin: 5px 10px;
+    padding: 2px;
+}
+
+header div a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+    padding: 4px 15px;
+}
+header div a:hover
+{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    
+    padding: 4px 15px;
+}
+
+.logo a
+{
+    font-size: 2em;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    
+    width: 45%;
+}
+
+.profile button
+{
+    margin: 7px auto;
+}
+
+.offcanvas
+{
+    margin: 0px;
+}
+.offcanvas-body
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* Main section */
+main
+{
+    width:100%;
+    margin:auto;
+}
+.signup
+{
+    background-image: url(/main_lambo2.webp);
+    background-size: cover;
+    background-position: bottom center;
+
+    position: relative;
+
+    min-height: 600px;
+
+}
+
+.one
+{
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 1.15rem;
+    box-sizing: border-box;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.588);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.two
+{
+    position: absolute;
+    right: 55px;
+    bottom: 65px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.588);
+    border-radius: 30px;
+    padding: 5px;
+    text-align : center;
+}
+
+.two button
+{
+    padding: 10px 45px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.two button:hover
+{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #040404;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Modal Form */
+
+
+
+.modal-body form
+{
+    display: flex;
+    flex-direction: column;
+    /* height: fit-content; */
+}
+.modal-body form div
+{
+    margin: 5px;
+    padding: 5px;
+    /* position: relative; */
+}
+ /* .modal-body form div label
+{
+    position:absolute;
+    left:0px;
+} */
+/* .modal-body form div input
+{
+    position: absolute;
+    right:0px;
+}  */
+
+
+/* Section - products */
+.products
+{
+    width:100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(186, 166, 166, 0.573);
+}
+.cards
+{
+    background-color: aliceblue;
+    width: 31vw;
+    height: 60vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.products .cards:nth-child(1)
+{
+    background-image: url(/pexels-dante-juhasz-62201650-8105779.jpg);
+    
+}
+.products .cards:nth-child(2)
+{
+    background-image: url(/pexels-albinberlin-919073.jpg);
+    
+}
+.products .cards:nth-child(3)
+{
+    background-image: url(/vinayak-sharma-vgv19wm8yQ4-unsplash.jpg);
+    
+}
+.cards p
+{
+    position: absolute;
+    left:10%;
+    bottom:5%;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+@media(max-width:600px)
+{
+    /* Product cards */
+    .products
+    {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .cards
+    {
+        width:70%;
+        margin: 20px auto;
+    }
+
+
+    /* signup button */
+    .one
+    {
+        display: none;
+    }
+    .two
+    {
+        position: absolute;
+        left:14%;
+        margin:auto;
+    }
+
+
+    .nav
+    {
+        display: none; 
+    }
+}
