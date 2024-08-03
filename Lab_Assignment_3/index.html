@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Paradise</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <!-- CDN link to font-awesome below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!-- Header starts -->
+    <header>
+        <div class="logo fw-bold">
+            <a href="#">Book Paradise</a>
+        </div>
+        <div class="navi">
+            <a href="">Home</a>
+            <a href="">Products
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+
+            <a href="gallery.html">Gallery</a>
+
+
+            <a href="about.html">About Us</a>
+        </div>
+        <!-- <div class="login">
+            <a href="">Login/Signup
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </a>
+        </div> -->
+        <div class="profile">
+            <button class="btn text-bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+                data-bs-theme="dark">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a href="">Account</a>
+                    <a href="">Wishlist</a>
+                    <a href="">Orders</a>
+                    <!-- <a href="grid_practise.html">Grid</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main Section starts -->
+    <main>
+
+        <!-- Section-1   Carousel -->
+        <section class="carousel-slides">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- <img src="Carousel picture 1.jpg" class="d-block w-100" alt="..."> -->
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- Section -1   carousel ends -->
+
+        <section class="section-services ">
+            <h4>Services</h4>
+            <div class="services">
+                
+                <div class="row row-cols-2">
+                    <div class="service-item col-6">
+                        <p>Over 10,00000+ books</p>
+                    </div>
+                    <div class="service-item col-6">
+                        <p>Unlimited Exchanges</p>
+                    </div>
+                    <div class="service-item col-6">
+                        <p>Affordable prices</p>
+                    </div>
+                    <div class="service-item col-6">
+                        <p>World class collection
+                            <br>
+                            accross all genres
+                        </p>
+                    </div>
+                    <div class="service-item col-6">
+                        <p>Door-to-Door Delivery
+                            <br>
+                            and pickup
+                        </p>
+                    </div>
+                    <div class="service-item col-6">
+                        <p>Unlimited Exchanges</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+</body>
+
+</html>

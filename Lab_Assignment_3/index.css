@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Manjari;
+    src: url(/Font/Manjari/Manjari-Regular.ttf);
+
+    font-family: Signika;
+    src:url(/Font/Signika/Signika-VariableFont_GRAD\,wght.ttf);
+}
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* header */
+header
+{
+    display :flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    margin:0px auto;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10;
+}
+header div
+{
+    margin: 5px 10px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+header div a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+    padding: 6px 15px;
+}
+header div a:hover
+{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    
+    padding: 6px 15px;
+    transition:0.7s ease-in-out;
+}
+
+.logo a
+{
+    font-size: 1.4em;
+}
+.navi
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    
+    width: 45%;
+}
+@media(max-width:800px)
+{
+    .nav
+    {
+        display:none;
+    }
+}
+
+.profile button
+{
+    margin: 7px auto;
+    font-size: small;
+}
+
+.offcanvas
+{
+    margin: 0px;
+}
+.offcanvas-body
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+/* header ends */
+
+
+/* main */
+main
+{
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.341);
+
+}
+
+/* Carousel section */
+/* .carousel-slides
+{
+
+} */
+.carousel-item
+{
+    background-size: cover;
+    min-height: 90vh ;
+
+}
+.carousel-item:nth-child(1)
+{
+    background-image: url('Carousel picture 1.jpg');
+}
+.carousel-item:nth-child(2)
+{
+    background-image: url('carousel_picture_2.jpg');
+    /* block-size: contain; */
+}
+.carousel-item:nth-child(3)
+{
+    background-image: url('carousel_picure_3.jpg');
+    background-size: contain;
+}
+.carousel-item:nth-child(4)
+{
+    background-image: url('carousel_picture_4.jpg');
+    background-size: cover;
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+}
+/* Carousel end */
+
+
+/* Secction-2    Services */
+.section-services
+{
+    margin: 1.1rem auto;
+    width:90%;
+    background-color: white;
+    border-radius:30px;
+}
+.section-services h4
+{
+    text-align: center;
+}
+.services
+{
+    width:70%;
+    margin:auto;
+}
+.service-item
+{
+    text-align: center;
+}
+
+
+
+
+
+
+@media(max-width: 800px)
+{
+    .navi
+    {
+        display: none;
+    }
+    
+}
