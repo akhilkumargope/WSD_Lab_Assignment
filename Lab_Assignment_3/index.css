@@ -42,15 +42,16 @@ header div a
     color: whitesmoke;
     font-size: large;
     padding: 6px 15px;
+    border-radius: 20px;
 }
 header div a:hover
 {
     background-color: aliceblue;
     color: black;
-    border-radius: 10px;
+    border-radius: 20px;
     
     padding: 6px 15px;
-    transition:0.7s ease-in-out;
+    transition:0.4s ease-in;
 }
 
 .logo a
@@ -89,6 +90,8 @@ header div a:hover
     flex-direction: column;
     
 }
+
+
 /* header ends */
 
 
@@ -97,7 +100,7 @@ main
 {
     margin-top: 30px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.341);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -109,13 +112,67 @@ main
 .carousel-item
 {
     background-size: cover;
-    min-height: 90vh ;
-
+    min-height: 80vh ;
+    position: relative;
 }
 .carousel-item:nth-child(1)
 {
-    background-image: url('Carousel picture 1.jpg');
+    background-image: url('carousel_picure_1.jpg');
+    background-size: contain;
+    /* background-repeat: no-repeat; */
 }
+
+.slide-content
+{
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.745);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.slide-content p
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+.slide-content>button
+{
+    padding:10px 20px;
+    background-color: #040404;
+    color: white;
+}
+.slide-content>button:hover
+{
+    padding:10px 20px;
+    background-color: #072194;
+    color: white;
+}
+
+/* Modal Form */
+
+
+
+.modal-body form
+{
+    display: flex;
+    flex-direction: column;
+    /* height: fit-content; */
+}
+.modal-body form div
+{
+    margin: 5px;
+    padding: 5px;
+    /* position: relative; */
+}
+
+
+
+
+
+
 .carousel-item:nth-child(2)
 {
     background-image: url('carousel_picture_2.jpg');
@@ -123,8 +180,7 @@ main
 }
 .carousel-item:nth-child(3)
 {
-    background-image: url('carousel_picure_3.jpg');
-    background-size: contain;
+    background-image: url('carousel_picture_3.jpg');
 }
 .carousel-item:nth-child(4)
 {
@@ -141,25 +197,90 @@ main
 {
     margin: 1.1rem auto;
     width:90%;
-    background-color: white;
+    background-color: rgba(178, 175, 175, 0.722);
     border-radius:30px;
 }
-.section-services h4
+.section-services h5
 {
     text-align: center;
+    font-size: xxx-large;
+    padding: 10px;
+    margin: 1.2rem;
 }
 .services
 {
     width:70%;
     margin:auto;
 }
+.row
+{
+    justify-content: space-between;
+}
 .service-item
 {
+    background-color: aliceblue;
     text-align: center;
+    box-shadow: 3px 3px 5px ;
+    margin: 25px 0px;
+    padding: 1rem;
 }
+.service-item p
+{
+    margin: 1.3em;
+    font-size: x-large;
+}
+/* Section 3 ends */
 
+/* Section - 4 Starts      maps */
+.maps
+{
+    margin: 1.1rem auto;
+    width:90%;
+    background-color: rgba(178, 175, 175, 0.722);
+    border-radius:30px;
+}
+.maps h5
+{
+    text-align: center;
+    font-size: xxx-large;
+}
+.map-item
+{
+    display: flex;
+    justify-content: space-around;
+    margin:1.3em;
+}
+.map-item a
+{
+    text-decoration: none;
+    padding: 20px 35px;
+    margin: 1.4em;
+    color:white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 30px;
+}
+.map-item a:hover
+{
+    background-color:rgb(6, 6, 143);
+    color: white;
+    transition: 0.4s ease-in-out;
+    transform: translateY(-10px);
+}
+/* Map section 3 ends */
 
+/* footer */
 
+footer {
+    background-color: #040404;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+/* footer ends */
 
 
 
@@ -168,6 +289,11 @@ main
     .navi
     {
         display: none;
+    }
+    .services
+    {
+        display: flex;
+        flex-direction: column;
     }
     
 }
