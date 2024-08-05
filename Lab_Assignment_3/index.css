@@ -259,6 +259,7 @@ main
     font-weight: bold;
     background-color: black;
     border-radius: 30px;
+    text-align:center;
 }
 .map-item a:hover
 {
