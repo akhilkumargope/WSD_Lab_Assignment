@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BookOrder SYSTEM "book_order.dtd">
+<BookOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="book_order.xsd">
+    <Customer id="C001">
+        <Name>Akhil Kumar Gope</Name>
+        <Email>akhilkumar16.ak@gmail.com</Email>
+        <Address>Kolkata</Address>
+    </Customer>
+    <Order id="O001">
+        <OrderDate>2024-08-11</OrderDate>
+        <Item>
+            <Title>Deception Point</Title>
+            <Author>Dann Brown</Author>
+            <Price currency="INR">159.00</Price>
+            <RentalPeriod>30</RentalPeriod>
+        </Item>
+    </Order>
+</BookOrder>

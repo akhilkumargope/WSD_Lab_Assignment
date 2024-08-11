@@ -1,0 +1,15 @@
+<!ELEMENT BookOrder (Customer, Order)>
+<!ELEMENT Customer (Name, Email, Address)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Order (OrderDate, Item+)>
+<!ELEMENT OrderDate (#PCDATA)>
+<!ELEMENT Item (Title, Author, Price, RentalPeriod)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT RentalPeriod (#PCDATA)>
+<!ATTLIST Customer id ID #REQUIRED>
+<!ATTLIST Order id ID #REQUIRED>
+<!ATTLIST Price currency CDATA #REQUIRED>
